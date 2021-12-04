@@ -60,7 +60,7 @@ public class DetailActivity extends YouTubeBaseActivity {
                                 return;
                             }
                             String youtubeKey = results.getJSONObject(0).getString("key");
-                            Log.d("DetailyActivity", youtubeKey);
+                            Log.d("DetailActivity", youtubeKey);
                             initializeYoutube(youtubeKey);
                         } catch (JSONException e) {
                             Log.e("DetailActivity", "Failed to parse JSON", e);
